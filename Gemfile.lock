@@ -242,7 +242,7 @@ GEM
       addressable
       faraday
       json (>= 1.8)
-    libv8 (3.16.14.19)
+    libv8 (6.7.288.46.1)
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -265,6 +265,8 @@ GEM
     mime-types-data (3.2018.0812)
     mini_mime (1.0.1)
     mini_portile2 (2.4.0)
+    mini_racer (0.2.4)
+      libv8 (>= 6.3)
     minitest (5.11.3)
     multi_json (1.13.1)
     multi_xml (0.6.0)
@@ -385,7 +387,6 @@ GEM
     rb-inotify (0.10.0)
       ffi (~> 1.0)
     rchardet (1.8.0)
-    ref (2.0.0)
     rest-client (2.0.2)
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 4.0)
@@ -467,9 +468,6 @@ GEM
       tins (~> 1.0)
     test-unit (3.2.9)
       power_assert
-    therubyracer (0.12.3)
-      libv8 (~> 3.16.14.15)
-      ref
     thor (0.19.4)
     thread_safe (0.3.6)
     tilt (2.0.9)
@@ -558,6 +556,7 @@ DEPENDENCIES
   libv8
   mail (= 2.6.6)
   mime-types
+  mini_racer (= 0.2.4)
   mysql2
   net-ldap
   oauth2
@@ -600,7 +599,6 @@ DEPENDENCIES
   telegramAPI
   telephone_number
   test-unit
-  therubyracer
   twilio-ruby
   twitter!
   uglifier
